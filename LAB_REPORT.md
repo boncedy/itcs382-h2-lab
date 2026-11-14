@@ -1,6 +1,6 @@
 # Lab Report, Designing the Data Management Layer with H2
 
-Repository URL:
+Repository URL: https://github.com/boncedy/itcs382-h2-lab 
 
 ## Tools
 
@@ -19,16 +19,17 @@ Commit of the starter, before any change:
 
 Output of the second run, for `staff` and `quit`:
 
-```text
-
+```
+Free lockers: 3
+- I think they're kept temporarily in InMemoryParcelRepository.java because they're mapped in the memory, and when I exited the program, they're free and we won't see the same parcels again.
 ```
 
 State in one sentence where you think the parcels of the first run were kept.
 
 0.5 The line of Main that you would change to keep the parcels somewhere else:
 
-```java
-
+```
+ParcelRepository repository = new InMemoryParcelRepository();
 ```
 
 0.6 Commit of the switch to H2:
